@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:2000/api/v1',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://divine-bank-backend.onrender.com/api/v1',
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 // Attach JWT token to outgoing requests
@@ -26,3 +29,5 @@ axiosInstance.interceptors.response.use(
 );
 
 export default axiosInstance;
+
+
