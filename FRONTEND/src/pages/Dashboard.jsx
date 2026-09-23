@@ -1,7 +1,7 @@
 import html2pdf from 'html2pdf.js';
 import { useContext, useEffect, useState, useRef } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import axiosInstance from '../API/axiosInstance';
+import axiosInstance from '../api/axiosInstance';
 import { 
   LogOut, Wallet, Send, Search, History, Shield, X, 
   ArrowUpRight, ArrowDownLeft, Printer, Eye, EyeOff, 

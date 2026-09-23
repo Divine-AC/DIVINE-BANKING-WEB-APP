@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axiosInstance from '../API/axiosInstance';
+import axiosInstance from '../api/axiosInstance';
 import { CreditCard, User, Mail, Lock, Phone, ArrowRight, ShieldCheck } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
