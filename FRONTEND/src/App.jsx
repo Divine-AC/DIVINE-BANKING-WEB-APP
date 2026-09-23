@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthContext } from './CONTEXT/AuthContext'; // UPCASE matching CONTEXT folder
-import Login from './PAGES/Login';                 // UPCASE matching PAGES folder
-import Register from './PAGES/Register';              // UPCASE matching PAGES folder
-import Dashboard from './PAGES/Dashboard';            // UPCASE matching PAGES folder
+import { AuthContext } from './CONTEXT/AuthContext';
+import Login from './PAGES/Login';
+import Register from './PAGES/Register';
+import Dashboard from './PAGES/Dashboard';
 
 const ProtectedRoute = ({ children }) => {
   const { user } = useContext(AuthContext);
