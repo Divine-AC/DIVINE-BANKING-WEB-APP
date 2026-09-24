@@ -12,9 +12,12 @@ const app = express();
 
 app.use(express.json());
 
+// Pass an array of allowed origins to cors
 app.use(cors({
-  origin: 'http://localhost:5173',
-  origin: 'https://divine-banking-web-app.vercel.app',
+  origin: [
+    'http://localhost:5173',
+    'https://divine-banking-web-app.vercel.app'
+  ],
   credentials: true
 }));
 
